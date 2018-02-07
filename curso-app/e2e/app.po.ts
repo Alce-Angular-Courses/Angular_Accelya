@@ -5,7 +5,11 @@ export class AppPage {
     return browser.get('/');
   }
 
-  getParagraphText() {
+  getTitle() {
     return element(by.css('acc-root h1')).getText();
+  }
+
+  getFooter() {
+    return element(by.css('acc-root footer')).getText();
   }
 }

@@ -7,8 +7,15 @@ describe('curso-app App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display title', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to acc!');
+    expect(page.getTitle()).toContain('!');
+  });
+
+  it('should display app footer', () => {
+    page.navigateTo();
+    expect(page.getFooter()).toBeTruthy();
   });
 });
+
+

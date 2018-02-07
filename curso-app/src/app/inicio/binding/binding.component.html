@@ -1,0 +1,16 @@
+<div class="card">
+  <div class="card-header">
+    <h4 class="card-title">Binding</h4> 
+  </div>
+  <div class="card-body">
+    <div class="form-group">
+      <label for="nombre">Nonbre</label>
+      <input type="text" class="form-control" name="nombre" id="nombre" [(ngModel)]="userName">
+    </div>
+    <button type="button" class="btn btn-primary btn-lg btn-block"
+      (click)="btnBorrar($event)" >Borrar</button>
+  </div>
+  <div class="card-footer text-muted">
+    Hola {{ userName }}
+  </div>
+</div>
