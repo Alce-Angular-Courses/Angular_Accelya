@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
             <h2>inicio works!</h2>
         </div>
         <acc-binding class="col-6"></acc-binding>
+        <acc-reflocal class="col-6"></acc-reflocal>
       </div>
     </div>
   `,

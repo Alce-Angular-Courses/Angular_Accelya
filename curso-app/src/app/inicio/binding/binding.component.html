@@ -11,6 +11,8 @@
       (click)="btnBorrar($event)" >Borrar</button>
   </div>
   <div class="card-footer text-muted">
-    Hola {{ userName }}
+    <p>Hola {{ userName }}</p>
+    <p> 23 * {{nZ}} = {{ 23 * nZ }}</p>
+    <p> {{nZ > 40 ?  'Buenos días D. ' : 'Hola' }} {{ userName.toUpperCase() }}</p>
   </div>
 </div>

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { InicioComponent } from './inicio.component';
 import { BindingComponent } from './binding/binding.component';
+import { ReflocalComponent } from './reflocal/reflocal.component';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { BindingComponent } from './binding/binding.component';
   ],
   declarations: [
     InicioComponent,
-    BindingComponent
+    BindingComponent,
+    ReflocalComponent
   ],
   exports : [
     InicioComponent
