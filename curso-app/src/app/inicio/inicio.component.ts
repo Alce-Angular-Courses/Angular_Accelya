@@ -10,6 +10,8 @@ import { Component, OnInit } from '@angular/core';
         </div>
         <acc-binding class="col-6"></acc-binding>
         <acc-reflocal class="col-6"></acc-reflocal>
+        <div class="col-12 mt-2"></div>
+        <acc-padre class="col-6"></acc-padre>
       </div>
     </div>
   `,

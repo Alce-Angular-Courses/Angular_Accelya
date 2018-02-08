@@ -1,0 +1,15 @@
+<div class="card">
+  <div class="card-header">
+    <h4>Componente padre</h4>
+  </div>
+  <div class="card-body">
+    <div class="form-group">
+      <label for="">Nombre del hijo</label>
+      <input type="text" class="form-control" name="" id="" [(ngModel)]="nombre">
+    </div>
+    <acc-hijo [nombre]="nombre" (evNombre)="resHijo($event)"></acc-hijo>
+  </div>
+  <div class="card-footer text-muted">
+   El hijo se llama {{ nombre }}
+  </div>
+</div>

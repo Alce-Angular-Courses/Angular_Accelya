@@ -11,7 +11,8 @@ export class BindingComponent implements OnInit {
   userName: string;
   nZ: number;
 
-  constructor() { }
+  constructor() {
+   }
 
   ngOnInit() {
     this.userName = 'Pepe';

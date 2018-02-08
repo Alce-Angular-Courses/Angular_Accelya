@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { InicioComponent } from './inicio.component';
 import { BindingComponent } from './binding/binding.component';
 import { ReflocalComponent } from './reflocal/reflocal.component';
+import { PadreComponent } from './padre/padre.component';
+import { HijoComponent } from './hijo/hijo.component';
 
 
 @NgModule({
@@ -14,7 +16,9 @@ import { ReflocalComponent } from './reflocal/reflocal.component';
   declarations: [
     InicioComponent,
     BindingComponent,
-    ReflocalComponent
+    ReflocalComponent,
+    PadreComponent,
+    HijoComponent
   ],
   exports : [
     InicioComponent
