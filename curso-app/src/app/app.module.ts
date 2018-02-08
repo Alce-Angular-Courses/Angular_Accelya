@@ -6,8 +6,10 @@ import { AppRoutingModule } from './app-routing.module';
 // Modulos de la aplicacion
 import { CoreModule } from './core/core.module';
 import { InicioModule } from './inicio/inicio.module';
+import { TareasModule } from './tareas/tareas.module';
 // Componentes del modulo
 import { AppComponent } from './app.component';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { AppComponent } from './app.component';
     FormsModule,
     AppRoutingModule,
     CoreModule,
-    InicioModule
+    InicioModule,
+    TareasModule
   ],
   providers: [],
   bootstrap: [AppComponent]
