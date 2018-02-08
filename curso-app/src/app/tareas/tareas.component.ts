@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TareasComponent implements OnInit {
 
-  tarea: string;
   aTareas: Array<string>;
 
   constructor() { }
@@ -17,10 +16,9 @@ export class TareasComponent implements OnInit {
     // this.aTareas = []
   }
 
-  addTarea() {
-    this.aTareas.push(this.tarea);
+  addTarea(tarea: string) {
+    this.aTareas.push(tarea);
     console.log(this.aTareas);
-    this.tarea = '';
   }
 
 }

@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 // Modulos de la aplicacion
 import { CoreModule } from './core/core.module';
+import { SharedModule } from './shared/shared.module';
 import { InicioModule } from './inicio/inicio.module';
 import { TareasModule } from './tareas/tareas.module';
 // Componentes del modulo
@@ -20,6 +21,7 @@ import { AppComponent } from './app.component';
     FormsModule,
     AppRoutingModule,
     CoreModule,
+    SharedModule,
     InicioModule,
     TareasModule
   ],
