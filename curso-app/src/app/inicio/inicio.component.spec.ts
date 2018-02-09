@@ -1,6 +1,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { InicioComponent } from './inicio.component';
+import { BindingComponent } from './binding/binding.component';
+import { ReflocalComponent } from './reflocal/reflocal.component';
+import { PadreComponent } from './padre/padre.component';
+import { FormsModule } from '@angular/forms';
 
 describe('InicioComponent', () => {
   let component: InicioComponent;
@@ -8,7 +12,13 @@ describe('InicioComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ InicioComponent ]
+      declarations: [
+        InicioComponent,
+        BindingComponent,
+        ReflocalComponent,
+        PadreComponent
+       ],
+       imports: [FormsModule]
     })
     .compileComponents();
   }));

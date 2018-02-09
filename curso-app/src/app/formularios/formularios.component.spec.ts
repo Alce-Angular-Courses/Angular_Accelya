@@ -1,22 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HijoComponent } from './hijo.component';
-import { FormsModule } from '@angular/forms';
+import { FormulariosComponent } from './formularios.component';
 
-describe('HijoComponent', () => {
-  let component: HijoComponent;
-  let fixture: ComponentFixture<HijoComponent>;
+describe('FormulariosComponent', () => {
+  let component: FormulariosComponent;
+  let fixture: ComponentFixture<FormulariosComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HijoComponent ],
-      imports: [FormsModule]
+      declarations: [ FormulariosComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HijoComponent);
+    fixture = TestBed.createComponent(FormulariosComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

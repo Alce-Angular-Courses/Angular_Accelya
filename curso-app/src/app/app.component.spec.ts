@@ -3,6 +3,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { InicioModule } from './inicio/inicio.module';
+import { TareasModule } from './tareas/tareas.module';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -10,7 +11,8 @@ describe('AppComponent', () => {
       imports: [
         RouterTestingModule,
         CoreModule,
-        InicioModule
+        InicioModule,
+        TareasModule
       ],
       declarations: [
         AppComponent
