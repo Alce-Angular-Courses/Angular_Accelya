@@ -7,8 +7,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
 import { InicioModule } from './inicio/inicio.module';
-import { TareasModule } from './tareas/tareas.module';
-import { FormulariosModule } from './formularios/formularios.module';
 // Componentes del modulo
 import { AppComponent } from './app.component';
 // i18n
@@ -28,9 +26,7 @@ registerLocaleData(localeEs);
     AppRoutingModule,
     CoreModule,
     SharedModule,
-    InicioModule,
-    TareasModule,
-    FormulariosModule
+    InicioModule
   ],
   providers: [ { provide: LOCALE_ID, useValue: 'es' }],
   bootstrap: [AppComponent]
