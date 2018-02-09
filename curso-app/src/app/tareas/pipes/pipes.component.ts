@@ -13,6 +13,7 @@ export class PipesComponent implements OnInit {
   nPerc: number;
   dFecha: Date;
   oDato: Object;
+  sFrase: string;
 
   constructor() { }
 
@@ -24,5 +25,6 @@ export class PipesComponent implements OnInit {
     this.dFecha = new Date();
     this.oDato = {nombre: 'Pepe',
                   apellidos: 'Perex'};
+    this.sFrase = 'En un lugar de la Mancha de cuyo nombre ';
   }
 }
