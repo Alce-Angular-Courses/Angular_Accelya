@@ -5,6 +5,7 @@ import { BindingComponent } from './binding/binding.component';
 import { ReflocalComponent } from './reflocal/reflocal.component';
 import { PadreComponent } from './padre/padre.component';
 import { FormsModule } from '@angular/forms';
+import { HijoComponent } from './hijo/hijo.component';
 
 describe('InicioComponent', () => {
   let component: InicioComponent;
@@ -16,7 +17,8 @@ describe('InicioComponent', () => {
         InicioComponent,
         BindingComponent,
         ReflocalComponent,
-        PadreComponent
+        PadreComponent,
+        HijoComponent
        ],
        imports: [FormsModule]
     })

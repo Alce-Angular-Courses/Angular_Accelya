@@ -16,6 +16,7 @@ describe('ListaComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(ListaComponent);
     component = fixture.componentInstance;
+    component.aItems = [];
     fixture.detectChanges();
   });
 

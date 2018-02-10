@@ -1,6 +1,11 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TareasComponent } from './tareas.component';
+import { ItemComponent } from './item/item.component';
+import { ListaComponent } from './lista/lista.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { FormsModule } from '@angular/forms';
+import { SharedModule } from '../shared/shared.module';
 
 describe('TareasComponent', () => {
   let component: TareasComponent;
@@ -8,7 +13,12 @@ describe('TareasComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TareasComponent ]
+      declarations: [
+        TareasComponent,
+        ItemComponent,
+        ListaComponent,
+        PipesComponent ],
+      imports: [SharedModule]
     })
     .compileComponents();
   }));
