@@ -1,16 +1,16 @@
 <div class="container main">
   <div class="row">
-    <div class="col-12">
-      <h4>Tareas</h4>
+    <div class="col-12 title">
+      <h2>Tareas</h2>
     </div>
-    <acc-item (evNewItem)="addTarea($event)"></acc-item>
-    <acc-lista [aItems] = "aTareas"></acc-lista>
+    <acc-item class="col-6" (evNewItem)="addTarea($event)"></acc-item>
+    <acc-lista class="col-6" [aItems] = "aTareas"></acc-lista>
   </div>
-  <div class="row">
-      <div class="col-12">
-        <p id="p1" accDestacar="Muy Importante">Parrafo</p>
+  <div class="row mt-4">
+      <div class="col-4">
+        <p id="p1" accDestacar="Muy Importante">Uso de directivas</p>
       </div>
-      <acc-pipes class="col-12"></acc-pipes>
+      <acc-pipes class="col-8"></acc-pipes>
   </div>
 
   

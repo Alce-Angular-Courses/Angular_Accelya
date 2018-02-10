@@ -3,10 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'acc-inicio',
   template: `
-    <div class="container main">
+    <div class="container">
       <div class="row">
-        <div class="col-12">
-            <h2>inicio works!</h2>
+        <div class="col-12 title">
+            <h2>Inicio</h2>
         </div>
         <acc-binding class="col-6"></acc-binding>
         <acc-reflocal class="col-6"></acc-reflocal>
@@ -15,9 +15,7 @@ import { Component, OnInit } from '@angular/core';
       </div>
     </div>
   `,
-  styles: [
-    '.main {min-height : 15rem}'
-  ]
+  styles: []
 })
 export class InicioComponent implements OnInit {
 

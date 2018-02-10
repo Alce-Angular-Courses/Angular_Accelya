@@ -5,6 +5,7 @@ import { CabezaComponent } from './cabeza/cabeza.component';
 import { LogoComponent } from './logo/logo.component';
 import { MenuComponent } from './menu/menu.component';
 import { RouterModule } from '@angular/router';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   imports: [
@@ -15,11 +16,13 @@ import { RouterModule } from '@angular/router';
     CabezaComponent,
     PieComponent,
     LogoComponent,
-    MenuComponent
+    MenuComponent,
+    MainComponent
   ],
   exports: [
     CabezaComponent,
     MenuComponent,
+    MainComponent,
     PieComponent
   ]
 })

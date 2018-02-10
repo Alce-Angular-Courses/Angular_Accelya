@@ -5,10 +5,10 @@ import { Component, OnInit } from '@angular/core';
   template: `
   <div class="container">
     <div class="row">
-      <div class="col-12">
-           <h4>Formularios</h4>
+      <div class="col-12 title">
+           <h2>Formularios</h2>
       </div>
-      <acc-form-td class="col-12"></acc-form-td>
+      <acc-form-td class="col-6"></acc-form-td>
     </div>
   </div>
  

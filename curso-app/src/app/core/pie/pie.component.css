@@ -3,3 +3,7 @@
     color: gold;
     margin-top: 3rem;
 }
+
+.alto {
+    min-height: 5rem;
+}
