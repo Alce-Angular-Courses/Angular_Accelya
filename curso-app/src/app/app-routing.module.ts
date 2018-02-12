@@ -6,6 +6,7 @@ const routes: Routes = [
   { path: 'inicio', component: InicioComponent },
   { path: 'formularios', loadChildren: './formularios/formularios.module#FormulariosModule' },
   { path: 'tareas', loadChildren: './tareas/tareas.module#TareasModule' },
+  { path: 'libros', loadChildren: './libros/libros.module#LibrosModule' },
   { path: '', pathMatch: 'full', redirectTo: 'inicio' },
   { path: '**', pathMatch: 'full', redirectTo: 'inicio' }
 ];
