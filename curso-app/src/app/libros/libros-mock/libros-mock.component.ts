@@ -18,7 +18,22 @@ export class LibrosMockComponent implements OnInit {
   }
 
   buscar() {
-    this.aLibros = this.booksService.getBooks(this.clave)
+    this.aLibros = this.booksService.getBooks(this.clave);
+    this.clave = '';
   }
 
+  buscarAsinc() {
+    this.booksService.getBooksAsync(this.clave).then(
+      (response: any) => {this.aLibros = response; }
+    );
+    this.clave = '';
+  }
+
+  buscarRx() {
+    this.booksService.getBookcRx(this.clave)
+    .subscribe(
+      (response: any) => {this.aLibros = response; }
+    );
+    this.clave = '';
+  }
 }

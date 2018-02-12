@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
       <div class="col-12">
         <h2>Libros</h2>
       </div>
-      <acc-libros-mock> class="col-6"</acc-libros-mock>
+      <acc-libros-mock class="col-6"></acc-libros-mock>
     </div>
   </div>
   `,
