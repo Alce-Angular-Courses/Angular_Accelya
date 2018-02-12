@@ -13,7 +13,6 @@ class TestComponent {
 
 describe('DestacarDirective', () => {
 
-
   let component: TestComponent;
   let fixture: ComponentFixture<TestComponent>;
   let elem: DebugElement;
