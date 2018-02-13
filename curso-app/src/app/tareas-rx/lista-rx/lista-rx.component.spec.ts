@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ListaRxComponent } from './lista-rx.component';
+import { StoreService } from '../../services/store.service';
 
 describe('ListaRxComponent', () => {
   let component: ListaRxComponent;
@@ -8,7 +9,8 @@ describe('ListaRxComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ListaRxComponent ]
+      declarations: [ ListaRxComponent ],
+      providers: [StoreService]
     })
     .compileComponents();
   }));
