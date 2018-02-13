@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import { BookModel } from '../models/Books.model';
+import { Book } from '../models/books.model';
 import { BOOKS } from '../models/Books.data';
 
 @Injectable()
 export class CatalogoService {
 
-  private aBooks: Array<BookModel>;
+  private aBooks: Array<Book>;
 
   constructor() {
     this.aBooks = BOOKS;
