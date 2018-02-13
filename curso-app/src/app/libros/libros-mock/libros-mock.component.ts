@@ -23,7 +23,8 @@ export class LibrosMockComponent implements OnInit {
   }
 
   buscarAsinc() {
-    this.booksService.getBooksAsync(this.clave).then(
+    this.booksService.getBooksAsync(this.clave)
+    .then(
       (response: any) => {this.aLibros = response; }
     );
     this.clave = '';

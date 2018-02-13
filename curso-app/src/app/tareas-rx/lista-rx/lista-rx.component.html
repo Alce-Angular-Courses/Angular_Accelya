@@ -1,0 +1,14 @@
+<div *ngIf="aItems.length; else vacioTemplate"> 
+  <h4>Tareas</h4>
+    <ul class="list-group">
+      <li class="list-group-item"
+      *ngFor="let tarea of aItems; let i = index">{{ tarea }}
+      <button class="btn btn-danger btn-xs" (click)="borrar(i)">Borrar</button>
+    </li>
+    </ul>
+</div>
+
+<ng-template #vacioTemplate>
+  <p>Animate a escribir una tarea</p>
+</ng-template>
+
