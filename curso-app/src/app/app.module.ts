@@ -13,6 +13,9 @@ import { AppComponent } from './app.component';
 import { LOCALE_ID } from '@angular/core';
 import { registerLocaleData } from '@angular/common';
 import localeEs from '@angular/common/locales/es';
+// Modulos de terceros
+import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { ChartsModule } from 'ng2-charts';
 
 registerLocaleData(localeEs);
 
@@ -23,6 +26,8 @@ registerLocaleData(localeEs);
   imports: [
     BrowserModule,
     FormsModule,
+    NgbModule.forRoot(),
+    ChartsModule,
     AppRoutingModule,
     CoreModule,
     SharedModule,

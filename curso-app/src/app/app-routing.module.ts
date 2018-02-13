@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: 'tareas', loadChildren: './tareas/tareas.module#TareasModule' },
   { path: 'tareasrx', loadChildren: './tareas-rx/tareas-rx.module#TareasRxModule' },
   { path: 'libros', loadChildren: './libros/libros.module#LibrosModule' },
+  { path: 'about', loadChildren: './about/about.module#AboutModule' },
   { path: '', pathMatch: 'full', redirectTo: 'inicio' },
   { path: '**', pathMatch: 'full', redirectTo: 'inicio' }
 ];
