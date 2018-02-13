@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { InicioComponent } from './inicio/inicio.component';
+import { MainContactosComponent } from './contactos/main-contactos.component';
 
 const routes: Routes = [
   { path: 'inicio', component: InicioComponent },
@@ -9,6 +10,7 @@ const routes: Routes = [
   { path: 'tareasrx', loadChildren: './tareas-rx/tareas-rx.module#TareasRxModule' },
   { path: 'libros', loadChildren: './libros/libros.module#LibrosModule' },
   { path: 'catalogo', loadChildren: './catalogo/catalogo.module#CatalogoModule' },
+  { path: 'contactos', component: MainContactosComponent },
   { path: 'about', loadChildren: './about/about.module#AboutModule' },
   { path: '', pathMatch: 'full', redirectTo: 'inicio' },
   { path: '**', pathMatch: 'full', redirectTo: 'inicio' }
