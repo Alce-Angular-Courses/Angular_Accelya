@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: 'libros', loadChildren: './libros/libros.module#LibrosModule' },
   { path: 'catalogo', loadChildren: './catalogo/catalogo.module#CatalogoModule' },
   { path: 'about', loadChildren: './about/about.module#AboutModule' },
+  { path: 'contactos', loadChildren: './contactos/contactos.module#ContactosModule' },
   { path: '', pathMatch: 'full', redirectTo: 'inicio' },
   { path: '**', pathMatch: 'full', redirectTo: 'inicio' }
 ];
