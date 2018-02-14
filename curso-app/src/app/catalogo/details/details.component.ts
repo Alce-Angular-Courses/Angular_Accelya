@@ -22,7 +22,7 @@ export class DetailsComponent implements OnInit {
   }
 
     gotoBooks() {
-    this.router.navigateByUrl('/catalogo');
+      this.router.navigateByUrl('/catalogo');
   }
 
 }

@@ -6,3 +6,5 @@
 export const environment = {
   production: false
 };
+
+export const API_LIBROS  = 'https://www.googleapis.com/books/v1/volumes?q=intitle:';
